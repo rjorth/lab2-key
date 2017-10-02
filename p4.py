@@ -1,5 +1,5 @@
-def divisble_sublist(list1, d1, d2):
-    byd1 = any(list1 % d1 == 0 for i in d1)
-    byd2 = any(list1 % d2 == 0 for i in d2)
-    list2 = byd1 + byd2
+def divisible_sublist(list1, d1, d2):
+    d1_test = [x for x in list1 if x % d1 == 0]
+    d2_test = [x for x in list1 if x % d2 == 0]
+    list2 = d1_test + d2_test
     return list2
