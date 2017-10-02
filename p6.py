@@ -4,9 +4,9 @@ class TextProcessor:
 
         def count_alphabet():
             count = 0
-                for char in test_string:
-                    count += 1
-                    return count
+            for letter in test_string:
+                count += 1
+                return count
 
         def vowel_capitalization():
             to_upper = ['a', 'e', 'i', 'o', 'u']
@@ -17,13 +17,13 @@ class TextProcessor:
                 array.append(c)
             print(''.join(array))
 
-            def concat(new_string):
-                ''.join(test_string, new_string)
+        def concat(new_string):
+            ''.join(test_string, new_string)
 
-            def search(sub):
-                sub = ''
-                try: 
-                    test_string.find(sub)
-                except ValueError: 
-                    return -1
+        def search(sub):
+            try:
+                test_string.find(sub)
+            except ValueError:
+                print(-1)
+
                
