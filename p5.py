@@ -22,11 +22,11 @@ class Rectangle:
             return w
 
         def area():
-            area = (h*2) *2
-            return area
+            a = (h*w)
+            return a
 
         def perimeter():
-            perimeter = (h * 2) + (w * 2)
-            return perimeter
+            p = (h * 2) + (w * 2)
+            return p
 
         is_square(), diagonal_len(), height(), width(), area(), perimeter()
